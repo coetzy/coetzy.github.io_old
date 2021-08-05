@@ -123,17 +123,34 @@ Licence URI: https://www.os-templates.com/template-terms
                 flex: 100%;
                 max-width: 100%;
             }
-
-
- 
-
-            body {
-                border: solid;
-                border-width: 1px 0;
-                background-color: rgb(255 255 255);
-                height: 100%;
+            /* Responsive layout - makes a two column-layout instead of four columns */
+            @media screen and (max-width: 800px) {
+                .column2 {
+                    -ms-flex: 50%;
+                    flex: 50%;
+                    max-width: 50%;
+                }
             }
-        }
+            /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+                .column2 {
+                    -ms-flex: 100%;
+                    flex: 100%;
+                    max-width: 100%;
+                }
+
+
+
+
+
+
+                body {
+                    border: solid;
+                    border-width: 1px 0;
+                    background-color: rgb(255 255 255);
+                    height: 100%;
+                }
+            }
     </style>
 </head>
 <body>
@@ -172,6 +189,16 @@ Licence URI: https://www.os-templates.com/template-terms
         </div>
         <!-- Photo Grid -->
         <div class="row">
+
+            <div class="row">
+                <div class="column2">
+                    <img src="fotografia2/horizontal/01.jpg" style="width:100%">
+                </div>
+                <div class="column2">
+                    <img src="fotografia2/horizontal/02.jpg" style="width:100%">
+                </div>
+
+            </div>
             <div class="column">
                 <img src="fotografia2/vertical/1.jpg" style="width:100%">
             </div>
@@ -185,10 +212,10 @@ Licence URI: https://www.os-templates.com/template-terms
 
         <div class="row">
             <div class="column2">
-                <img src="fotografia2/horizontal/01.jpg" style="width:100%">
+                <img src="fotografia2/horizontal/1.jpg" style="width:100%">
             </div>
             <div class="column2">
-                <img src="fotografia2/horizontal/02.jpg" style="width:100%">
+                <img src="fotografia2/horizontal/2.jpg" style="width:100%">
             </div>
 
         </div>
@@ -207,10 +234,10 @@ Licence URI: https://www.os-templates.com/template-terms
 
         <div class="row">
             <div class="column2">
-                <img src="fotografia2/horizontal/1.jpg" style="width:100%">
+                <img src="fotografia2/horizontal/3.jpg" style="width:100%">
             </div>
             <div class="column2">
-                <img src="fotografia2/horizontal/2.jpg" style="width:100%">
+                <img src="fotografia2/horizontal/4.jpg" style="width:100%">
             </div>
 
         </div>
@@ -231,10 +258,10 @@ Licence URI: https://www.os-templates.com/template-terms
 
         <div class="row">
             <div class="column2">
-                <img src="fotografia2/horizontal/3.jpg" style="width:100%">
+                <img src="fotografia2/horizontal/5.jpg" style="width:100%">
             </div>
             <div class="column2">
-                <img src="fotografia2/horizontal/4.jpg" style="width:100%">
+                <img src="fotografia2/horizontal/6.jpg" style="width:100%">
             </div>
 
         </div>
@@ -255,13 +282,16 @@ Licence URI: https://www.os-templates.com/template-terms
 
         <div class="row">
             <div class="column2">
-                <img src="fotografia2/horizontal/5.jpg" style="width:100%">
+                <img src="fotografia2/horizontal/7.jpg" style="width:100%">
             </div>
             <div class="column2">
-                <img src="fotografia2/horizontal/6.jpg" style="width:100%">
+                <img src="fotografia2/horizontal/8.jpg" style="width:100%">
             </div>
 
         </div>
+
+
+
         <div class="row">
             <div class="column">
                 <img src="fotografia2/vertical/13.jpg" style="width:100%">
@@ -275,15 +305,6 @@ Licence URI: https://www.os-templates.com/template-terms
         </div>
 
 
-        <div class="row">
-            <div class="column2">
-                <img src="fotografia2/horizontal/7.jpg" style="width:100%">
-            </div>
-            <div class="column2">
-                <img src="fotografia2/horizontal/8.jpg" style="width:100%">
-            </div>
-
-        </div>
 
 
 
