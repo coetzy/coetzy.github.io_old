@@ -1,0 +1,12 @@
+﻿.gallery {
+    display: flex;
+    padding: 2px;
+    transition: .3s;
+    &:hover &__image
+
+
+}
+div {
+    display: block;
+    width: 50%;
+}
