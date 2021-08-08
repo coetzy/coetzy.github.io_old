@@ -19,9 +19,15 @@
 }
 
 }
+@font-face {
+    font-family: brandon;
+    src: url(Br.otf);
+    font-style: normal;
+    font-weight: 100;
+}
 
 body {
-    font-family: 'Pontano Sans', sans-serif;
+    font-family: 'brandon', sans-serif;
     font-size: 1.125rem;
     line-height: 1.5;
     margin: 0;

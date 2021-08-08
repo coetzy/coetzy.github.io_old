@@ -25,11 +25,11 @@ Licence URI: https://www.os-templates.com/template-terms
             padding-top: 0px;
         }
 
-        #footer #ctdetails {
+            #footer #ctdetails {
                 padding-top: 30px;
                 border-top: 1px solid;
                 padding-bottom: 30px;
-        }
+            }
 
         .overlay::after {
             FONT-VARIANT: JIS04;
@@ -37,23 +37,31 @@ Licence URI: https://www.os-templates.com/template-terms
             color: inherit;
             background-color: rgba(0,0,0,.0);
         }
-
-        .row1 {
-            border: solid;
-            border-width: 1px 0;
-            background-color: rgba(0,0,0,.70);
+        @font-face {
+            font-family: brandon;
+            src: url(Br.otf);
+            font-style: normal;
+            font-weight: 100;
         }
+
 
         h1, h2, h3, h4, h5, h6, .heading {
-            font-family: Verdana, Geneva, sans-serif;
+            font-family: brandon;
         }
-
 
         * {
             box-sizing: border-box;
         }
 
+        body {
+            margin: 0;
+            BACKGROUND-COLOR: WHITE;
+        }
 
+        .header {
+            text-align: center;
+            padding: 32px;
+        }
 
         .row {
             display: -ms-flexbox; /* IE10 */
@@ -61,9 +69,10 @@ Licence URI: https://www.os-templates.com/template-terms
             -ms-flex-wrap: wrap; /* IE10 */
             flex-wrap: wrap;
             padding: 0 4px;
-            max-width: 98%;
-            margin-right: 6%;
+            padding: 0 4px;
+            max-width: 96%;
             margin-left: 6%;
+            margin-right: 6%;
         }
 
         /* Create four equal columns that sits next to each other */
@@ -74,19 +83,50 @@ Licence URI: https://www.os-templates.com/template-terms
             padding: 0 4px;
         }
 
-        .column img {
-                margin-top: 8px;
-                vertical-align: middle;
-                width: 100%;
-              
+        .column2 {
+            -ms-flex: 33%;
+            flex: 33%;
+            max-width: 33%;
         }
 
-        img {
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
             padding: 1%;
         }
+
+        .column2 img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+            padding: 1%;
+        }
+
+        .row1 {
+            border: solid;
+            border-width: 1px 0;
+            background-color: #1C1D21;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+            .column {
+                -ms-flex: 50%;
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
             /* Responsive layout - makes a two column-layout instead of four columns */
             @media screen and (max-width: 800px) {
-                .column {
+                .column2 {
                     -ms-flex: 50%;
                     flex: 50%;
                     max-width: 50%;
@@ -94,59 +134,34 @@ Licence URI: https://www.os-templates.com/template-terms
             }
             /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
             @media screen and (max-width: 600px) {
-                .column {
+                .column2 {
                     -ms-flex: 100%;
                     flex: 100%;
                     max-width: 100%;
                 }
 
-                #pageintro .heading {
-                    margin-bottom: 20px;
-                    font-size: 2rem;
-                }
 
 
-                #footer #ctdetails {
-                    padding-top: 30px;
-                    border-top: 1px solid;
-                    padding-bottom: 30px;
-                }
 
-                .overlay::after {
-                    FONT-VARIANT: JIS04;
-                    FONT-WEIGHT: 200;
-                    color: inherit;
-                    background-color: rgba(0,0,0,.0);
-                }
 
-                .row1 {
-                    border: solid;
-                    border-width: 1px 0;
-                    background-color: rgba(0,0,0,.70);
-                }
 
-                h1, h2, h3, h4, h5, h6, .heading {
-                    font-family: Verdana, Geneva, sans-serif;
-                }
-
-                body {
-                    border: solid;
-                    border-width: 1px 0;
-                    background-color: rgba(0,0,0,.70);
-                    height: 100%;
-                }
-
-                .hoc {
-                    display: block;
-                    margin: 0 auto;
-                    max-width: 85%;
-                }
+               
             }
+
+
+
+
+
+
+
+
+
+
+
+                }
     </style>
 </head>
 <body>
-
-    <!-- Header -->
 
     <div class="wrapper row1">
 
@@ -162,53 +177,178 @@ Licence URI: https://www.os-templates.com/template-terms
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="murales.html">Murales</a></li>
                     <li><a href="pinturas.html">Pinturas</a></li>
+
                     <li><a href="fotografias.html">Fotografía</a></li>
 
                 </ul>
                 <!-- ################################################################################################ -->
             </nav>
         </header>
+
     </div>
 
-    <!-- Photo Grid -->
-    <div class="row">
-        <div class="column">
 
-            <img src="fotografia/1.jpg" style="width:100%">
-            <img src="fotografia/2.jpg" style="width:100%">
-            <img src="fotografia/18.jpg" style="width:100%">
+    <div class="w3-bar w3-black" style=" padding: 10px; text-align: center;">
+        <button class="w3-bar-item w3-button" onclick="openCity('1')" style="        border: none;
+        display: inline;
+        cursor: pointer;
+        font-size: 14px;
+        BACKGROUND-COLOR: WHITE;
+        padding: 8px 10px;
+        letter-spacing: 1.5px;
+        font-family: brandon;">
+            ACRÍLICOS/DRIPENS
+        </button>
 
-        </div>
-        <div class="column">
+        <button class="w3-bar-item w3-button" onclick="openCity('2')" style="        border: none;
+        display: inline;
+        cursor: pointer;
+        font-size: 14px;
+        BACKGROUND-COLOR: WHITE;
+        padding: 8px 10px;
+        letter-spacing: 1.5px;
+        font-family: brandon;">
+            ACUARELAS
+        </button>
+
+        <button class="w3-bar-item w3-button" onclick="openCity('3')" style="        border: none;
+        display: inline;
+        cursor: pointer;
+        font-size: 14px;
+        BACKGROUND-COLOR: WHITE;
+        padding: 8px 10px;
+        letter-spacing: 1.5px;
+        font-family: brandon;">
+            LAPICES
+        </button>
+        <button class="w3-bar-item w3-button" onclick="openCity('4')" style="        border: none;
+        display: inline;
+        cursor: pointer;
+        font-size: 14px;
+        BACKGROUND-COLOR: WHITE;
+        padding: 8px 10px;
+        letter-spacing: 1.5px;
+        font-family: brandon;">
+            TINTA
+        </button>
 
 
-            <img src="fotografia/15.jpg" style="width:100%">
-            <img src="fotografia/4.jpg" style="width:100%">
-            <img src="fotografia/5.jpg" style="width:100%">
-            <img src="fotografia/6.jpg" style="width:100%">
-        </div>
-        <div class="column">
+    </div>
 
-            <img src="fotografia/17.jpg" style="width:100%">
-            <img src="fotografia/13.jpg" style="width:100%">
-            <img src="fotografia/7.jpg" style="width:100%">
-            <img src="fotografia/8.jpg" style="width:100%">
-            <img src="fotografia/9.jpg" style="width:100%">
+    <div id="1" class="w3-container w3-display-container city">
 
-        </div>
-        <div class="column">
-            <img src="fotografia/12.jpg" style="width:100%">
-            <img src="fotografia/14.jpg" style="width:100%">
-            <img src="fotografia/16.jpg" style="width:100%">
-            <img src="fotografia/10.jpg" style="width:100%">
-            <img src="fotografia/11.jpg" style="width:100%">
+
+        <!-- Photo Grid -->
+        <div class="row">
+            <div class="column">
+                <img src="fotografia/acri/16.jpg" style="width:100%">
+                <img src="fotografia/acri/1.jpg" style="width:100%">
+                <img src="fotografia/acri/4.jpg" style="width:100%">
+
+                <img src="fotografia/acri/12.jpg" style="width:100%">
+
+            </div>
+            <div class="column">
+
+                <img src="fotografia/acri/2.jpg" style="width:100%">
+                <img src="fotografia/acri/3.jpg" style="width:100%">
+
+                <img src="fotografia/acri/13.jpg" style="width:100%">
+                <img src="fotografia/acri/14.jpg" style="width:100%">
+            </div>
+            <div class="column">
+
+                <img src="fotografia/acri/17.jpg" style="width:100%">
+                <img src="fotografia/acri/5.jpg" style="width:100%">
+                <img src="fotografia/acri/6.jpg" style="width:100%">
+
+
+
+            </div>
+            <div class="column">
+
+                <img src="fotografia/acri/8.jpg" style="width:100%">
+                <img src="fotografia/acri/11.jpg" style="width:100%">
+                <img src="fotografia/acri/7.jpg" style="width:100%">
+                <img src="fotografia/acri/10.jpg" style="width:100%">
+                <img src="fotografia/acri/9.jpg" style="width:100%">
+            </div>
 
         </div>
     </div>
 
-    </div >
+    <div id="2" class="w3-container w3-display-container city" style="display:none">
+        <div class="row">
+            <div class="column2">
+
+                <img src="fotografia/acua/1.jpg" style="width:100%">
+                <img src="fotografia/acua/5.jpg" style="width:100%">
+            </div>
+            <div class="column2">
+                <img src="fotografia/acua/2.jpg" style="width:100%">
+
+
+            </div>
+            <div class="column2">
+
+                <img src="fotografia/acua/3.jpg" style="width:100%">
+                <img src="fotografia/acua/4.jpg" style="width:100%">
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div id="3" class="w3-container w3-display-container city" style="display:none">
+        <div class="row">
+            <div class="row">
+                <div class="column2">
+
+                    <img src="fotografia/lapiz/1.jpg" style="width:100%">
+
+                </div>
+                <div class="column2">
+                    <img src="fotografia/lapiz/2.jpg" style="width:100%">
+
+
+                </div>
+                <div class="column2">
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="4" class="w3-container w3-display-container city" style="display:none">
+        <div class="row">
+            <div class="column2">
+
+                <img src="fotografia/lapicera/1.jpg" style="width:100%">
+                <img src="fotografia/lapicera/5.jpg" style="width:100%">
+
+            </div>
+            <div class="column2">
+
+                <img src="fotografia/lapicera/2.jpg" style="width:100%">
+                <img src="fotografia/lapicera/6.jpg" style="width:100%">
+            </div>
+            <div class="column2">
+
+                <img src="fotografia/lapicera/3.jpg" style="width:100%">
+                <img src="fotografia/lapicera/4.jpg" style="width:100%">
+            </div>
+
+        </div>
+
+    </div>
     <!-- ################################################################################################ -->
-    </div >
+    </div>
     <!-- End Top Background Image Wrapper -->
     <!-- ################################################################################################ -->
     <!-- ################################################################################################ -->
@@ -265,7 +405,15 @@ Licence URI: https://www.os-templates.com/template-terms
     <script src="layout/scripts/jquery.mobilemenu.js"></script>
 
 
+    <script>
+        function openCity(cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(cityName).style.display = "block";
+        }
+    </script>
 
 </body>
-</body>
-</html>

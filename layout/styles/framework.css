@@ -54,16 +54,37 @@ img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; l
 .imgover::after{top:50%; left:50%; width:50px; height:50px; line-height:50px; margin:-25px 0 0 -25px; font-family:"Font Awesome\ 5 Free"; font-weight:900; content:"\f067";/* fa-plus */ font-size:28px;}
 .imgover:hover::before, .imgover:hover::after{opacity:1;}
 
-
+@font-face {
+    font-family: brandon;
+    src: url(Br.otf);
+    font-style: normal;
+    font-weight: 100;
+}
 /* Fonts
 --------------------------------------------------------------------------------------------------------------- */
-body, input, textarea, select{font-family:Verdana, Geneva, sans-serif;}
-h1, h2, h3, h4, h5, h6, .heading{font-family:Georgia, "Times New Roman", Times, serif;}
+input, select, textarea {
+    font-family: brandon;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
 
-
-/* Forms
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+h1, h2, h3, h4, h5, h6, .heading {
+    font-family: brandon;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+#mainav ul {
+    text-transform: uppercase;
+    font-family: 'brandon';
+    letter-spacing: 1.5px;
+}
+    /* Forms
 --------------------------------------------------------------------------------------------------------------- */
-form, fieldset, legend{margin:0; padding:0; border:none;}
+    form, fieldset, legend{margin:0; padding:0; border:none;}
 legend{display:none;}
 
 label{margin-bottom:5px;}
@@ -73,7 +94,7 @@ label{margin-bottom:5px;}
 
 /* Generalise
 --------------------------------------------------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6, .heading{margin:0 0 20px 0; font-size:1.4rem; line-height:normal; font-weight:normal; text-transform:uppercase;}
+h1, h2, h3, h4, h5, h6, .heading{ font-family:brandon;   margin:0 0 20px 0; font-size:1.4rem; line-height:normal; font-weight:normal; text-transform:uppercase;}
 
 .heading.nospace{margin-bottom:0;}
 .heading.underline{display:inline-block; position:relative; padding:0 0 15px 0;}
