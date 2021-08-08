@@ -10,6 +10,7 @@ Licence URI: https://www.os-templates.com/template-terms
 <html lang="">
 <!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
 <head>
+    <title>COETZY</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
@@ -25,11 +26,11 @@ Licence URI: https://www.os-templates.com/template-terms
             padding-top: 0px;
         }
 
-        #footer #ctdetails {
+            #footer #ctdetails {
                 padding-top: 30px;
                 border-top: 1px solid;
                 padding-bottom: 30px;
-        }
+            }
 
         .overlay::after {
             FONT-VARIANT: JIS04;
@@ -74,12 +75,12 @@ Licence URI: https://www.os-templates.com/template-terms
             padding: 0 4px;
         }
 
-        .column img {
+            .column img {
                 margin-top: 8px;
                 vertical-align: middle;
                 width: 100%;
-              
-        }
+            }
+
         .column2 {
             -ms-flex: 33%; /* IE10 */
             flex: 33%;
@@ -96,9 +97,24 @@ Licence URI: https://www.os-templates.com/template-terms
         img {
             padding: 1%;
         }
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+            .column {
+                -ms-flex: 50%;
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
             /* Responsive layout - makes a two column-layout instead of four columns */
             @media screen and (max-width: 800px) {
-                .column {
+                .column2 {
                     -ms-flex: 50%;
                     flex: 50%;
                     max-width: 50%;
@@ -106,69 +122,54 @@ Licence URI: https://www.os-templates.com/template-terms
             }
             /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
             @media screen and (max-width: 600px) {
-                .column {
+                .column2 {
                     -ms-flex: 100%;
                     flex: 100%;
                     max-width: 100%;
                 }
-                /* Responsive layout - makes a two column-layout instead of four columns */
-                @media screen and (max-width: 800px) {
-                    .column2 {
-                        -ms-flex: 50%;
-                        flex: 50%;
-                        max-width: 50%;
-                    }
+
+                #pageintro .heading {
+                    margin-bottom: 20px;
+                    font-size: 2rem;
                 }
-                /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-                @media screen and (max-width: 600px) {
-                    .column2 {
-                        -ms-flex: 100%;
-                        flex: 100%;
-                        max-width: 100%;
-                    }
-
-                    #pageintro .heading {
-                        margin-bottom: 20px;
-                        font-size: 2rem;
-                    }
 
 
-                    #footer #ctdetails {
-                        padding-top: 30px;
-                        border-top: 1px solid;
-                        padding-bottom: 30px;
-                    }
-
-                    .overlay::after {
-                        FONT-VARIANT: JIS04;
-                        FONT-WEIGHT: 200;
-                        color: inherit;
-                        background-color: rgba(0,0,0,.0);
-                    }
-
-                    .row1 {
-                        border: solid;
-                        border-width: 1px 0;
-                        background-color: rgba(0,0,0,.70);
-                    }
-
-                    h1, h2, h3, h4, h5, h6, .heading {
-                        font-family: Verdana, Geneva, sans-serif;
-                    }
-
-                    body {
-                        border: solid;
-                        border-width: 1px 0;
-                        background-color: rgba(0,0,0,.70);
-                        height: 100%;
-                    }
-
-                    .hoc {
-                        display: block;
-                        margin: 0 auto;
-                        max-width: 85%;
-                    }
+                #footer #ctdetails {
+                    padding-top: 30px;
+                    border-top: 1px solid;
+                    padding-bottom: 30px;
                 }
+
+                .overlay::after {
+                    FONT-VARIANT: JIS04;
+                    FONT-WEIGHT: 200;
+                    color: inherit;
+                    background-color: rgba(0,0,0,.0);
+                }
+
+                .row1 {
+                    border: solid;
+                    border-width: 1px 0;
+                    background-color: rgba(0,0,0,.70);
+                }
+
+                h1, h2, h3, h4, h5, h6, .heading {
+                    font-family: Verdana, Geneva, sans-serif;
+                }
+
+                body {
+                    border: solid;
+                    border-width: 1px 0;
+                    background-color: rgba(0,0,0,.70);
+                    height: 100%;
+                }
+
+                .hoc {
+                    display: block;
+                    margin: 0 auto;
+                    max-width: 85%;
+                }
+            }
     </style>
 </head>
 <body>
